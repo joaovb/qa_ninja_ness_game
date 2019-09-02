@@ -1,0 +1,61 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel - Cadastro de Jogos Clássicos</title>
+    <meta name="description" content="Projeto simples para automação de testes">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+</head>
+<body>
+    <section>
+        <dialog class="nes-dialog is-adrk" id="modal">
+            <form method="dialog">
+                <p class="title">Novo Jogo</p>
+                <p class="message-show"></p>
+                <menu class="dialog-menu">
+                    <button class="nes-btn is-primary">Ok</button>
+                </menu>
+            </form>
+
+        </dialog>
+    </section>
+
+    <div class="container">
+        <h2>Novo Jogo</h2>
+
+        <form id="new-game">
+            <div class="new-field">
+                <label for="game">Nome</label>
+                <input class="nes-input" type="text" name="game" id="gameId"/>
+            </div>
+
+            <div class="nes-select">
+                <label for="console">Console</label>
+                <select name="console" id="">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Atari">Atari</option>
+                    <option value="Nitendo">Nitendo</option>
+                    <option value="Master System">Atari</option>
+                    <option value="Mega Drive">Atari</option>
+                    <option value="Super Nitendo">Super Nitendo</option>
+                    <option value="Neo Geo">Neo Geo</option>
+                </select>
+            </div>
+
+            <div class="nes-field">
+                <label for="year">Ano de lançamento</label>
+                <input type="text" name="year" class="nes-input" />
+            </div>
+
+
+            <button id="cadastrar-id" type="submit" class="nes-btn is-success btn-cadastrar">
+                Cadastrar
+            </button>
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
